@@ -1,0 +1,40 @@
+
+.admin_h{
+    margin-left: 570px;
+}
+
+.admin{
+    background-color:green ;
+    margin-top: 100px;
+    width: 1000px;
+    height: 600px;
+    padding: 10px;
+    margin-left: 600px;
+    color: rgb(247, 239, 239);
+    font-size: xx-large;
+    border-radius: 30px;
+}
+.admin_h{
+    margin-bottom: 200px;
+    
+margin-left: 600px;
+font-size: 50px;
+
+}
+body{
+    background-color:green;
+    color:whitesmoke
+}
+table{
+    padding: 100px;
+}
+.stu_table{
+    padding: 10px;
+    margin-left: 300px;
+}
+.exam_form{
+
+    margin-left: 300px;
+    font-size: 30px;
+    padding: 50px;
+}

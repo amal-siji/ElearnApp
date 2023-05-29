@@ -1,0 +1,43 @@
+{% extends 'teachers/tr_base.html' %} {% load static %} {% block title %}Exam
+{% endblock %} {% block content %}
+ 
+<div>
+  {% if messages %}
+  <ul class="messages">
+      {% for message in messages %}
+      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+  </ul>
+  {% endif %}
+  <form method="post" class="exam_form">
+    <h1 class="exam_head">Enter Exams</h1>
+    {% csrf_token %}
+    <div class="examform_input">
+      <label> Enter Subject</label><br>
+      {{ addform.subject}}
+    </div>
+
+    <div class="examform_input">
+      <label> Exam Portion</label><br>
+      {{ addform.Portion}}
+    </div>
+    <div class="examform_input" >  <label> Date  of Exam</label><br>
+        <input type="date" id="date" value="{{addform.Datetime}}
+    </div>
+
+    <div class="examform_input">
+      <label> Time of Exam</label><br>
+      <input type="time" id="time" value="{{addform.time}}
+    </div>
+    <button class="exam_btn"> Notify</button>
+  </form>
+
+  <script language="javascript">
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var yyyy = today.getFullYear();
+    today = yyyy + '-' + mm + '-' + dd;
+    $('#date').attr('min',today);
+</script>
+{% endblock %}

@@ -1,0 +1,167 @@
+body{
+    background-image: url('../images/education-day-arrangement-table-with-copy-space.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.indexquote{
+    color: aliceblue;
+    font-size: xx-large;
+    max-width: 500px;
+    margin-left:200px;
+    margin-top: 300px;
+    backface-visibility: hidden;
+    background-color:rgb(140, 161, 161);
+    border-radius: 10px;
+  
+  }
+    
+.aboutuspara{
+    background-color: rgb(140, 161, 161);
+    color: aliceblue;
+    font-size: xx-large;
+    max-width: 1200px;
+    margin-left:50px;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.contact-form-wrapper {
+    padding-left: 360px;
+    padding-top: 100px;
+  }
+  
+  .contact-form {
+    padding: 30px 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    max-width: 400px;
+   
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form .form-input,
+  .form-text-area {
+    background-color: #f0f4f5;
+    height: 50px;
+    padding-left: 16px;
+  }
+  
+  .contact-form .form-text-area {
+    background-color: #f0f4f5;
+    height: auto;
+    padding-left: 16px;
+  }
+  
+  .contact-form .form-control::placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+    opacity: 1;
+  }
+  
+  .contact-form .form-control:-ms-input-placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+  }
+  
+  .contact-form .form-control::-ms-input-placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+  }
+  
+  .contact-form .form-control:focus {
+    border-color: #f33fb0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0;
+  }
+  
+  .contact-form .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .contact-form .description {
+    color: #aeb4b9;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .contact-form .submit-button-wrapper {
+    text-align: center;
+  }
+  
+  .contact-form .submit-button-wrapper input {
+    border: none;
+    border-radius: 4px;
+    background-color: #f23292;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  
+  .contact-form .submit-button-wrapper input:hover {
+    background-color: #480828;
+  }
+  .tr_reg_btn{
+    width: 200px;
+  }
+  /* .tr_loginform{
+    margin-top: 500px;
+  }  */
+  
+
+
+  .reg_form_input{
+    width:500px;
+  }
+
+
+  .log_form_input{
+    width:400px;
+    height: 100px;
+    margin-left: 20px;
+    color: white;
+  }
+.login_form{
+  border:1px solid whitesmoke;
+  width: 500px;
+  height: 450px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 210px;
+  margin-left: 300px;
+  box-shadow: 15px 40px 30px;
+}
+.login-head{
+  color: white;
+  margin-bottom: 50px;
+  animation-duration: 10s;
+
+}
+.log_btn{
+  width: 400px;
+  border-radius: 50px;
+  height: 60px;
+  margin-left: 20px;
+  color:  white;
+  background-color: green;
+}
+
+.reg_form_input{
+  margin-left: 500px;
+  padding: 10px;
+  color: white;
+}
+.reg_form_inputbtn{
+  margin-left: 500px;
+  width: 200px;
+  height: 50px;border-radius: 10px;
+  background-color: blueviolet;
+  color: white;
+
+}

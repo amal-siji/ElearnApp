@@ -1,0 +1,37 @@
+{% extends 'admin/admin_base.html' %}
+
+{% load static %}
+
+{% block content %}
+<style>
+    table{
+        border: white;
+        margin-left: 300px;
+        padding: 20px;
+        border: 1px solid black;        
+    }
+    body{
+        background-color: rgb(140, 161, 161);
+        
+    }
+    .contact{
+        margin-left: 300px;
+    }
+</style>
+<form method="post" class="contacted_people"class="contact"> 
+    {% csrf_token %}
+     <table><tr>
+        <th>name</th>
+        <th>email</th>
+        <th>message</th></tr>
+        <tr>
+            {% for i in contactedpeople %}
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.message}}</td>
+            <td><a href="{% url 'ad_delete_contact' i.id %}"><button>Delete</button></a></td>            
+        </tr>
+{% endfor %}
+     </table>
+</form>
+{% endblock content %}

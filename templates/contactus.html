@@ -1,0 +1,34 @@
+{% extends 'base.html' %} {% block title %}Contact Us Page {% endblock %} 
+{% block content %}
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<div>
+    <div class="contact-form-wrapper d-flex justify-content-left">
+      <form class="contact-form" method="post">
+        {% csrf_token %}
+        <h5 class="title">Contact us</h5>
+        <p class="description">Feel free to contact us if you need any assistance, any help or another question.
+        </p>
+        <div>
+          <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name", name="usname">
+        </div>
+        <div>
+          <input type="email" class="form-control rounded border-white mb-3 form-input" placeholder="Email" name="email"
+          >
+        </div>
+        <div>
+          <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Message" name="message" ,required></textarea>
+        </div>
+        <div class="submit-button-wrapper">
+          <button type="submit">submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

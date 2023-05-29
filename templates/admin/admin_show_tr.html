@@ -1,0 +1,36 @@
+{% extends 'admin/admin_base.html' %}
+
+{% load static %}
+{% block content %}
+<style>
+  table{
+    width: 700px;
+    border: 1px solid snow;
+    padding: 10px;
+    margin-left: 500px;
+  }
+</style>
+<h1>Our Teachers</h1>
+<table>
+    <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Subject</th>
+        <th>image</th>
+        <th>Actions</th>
+      </tr>
+      {% for i in show_teachers %}
+      <tr>
+        <td>{{i.user.first_name}}</td>
+        <td>{{i.user.last_name}}</td>
+        <td>{{i.subject}}</td>
+        <td>{{i.image}}</td>
+        <img class="propicc" src="{{..image.url}}" ></a>
+        <td><a  href="{% url 'tr_delete' i.id %}" ><button> Delete</button></a></td>
+        
+      </tr>
+      {% endfor %} 
+</table>
+
+{% endblock content %}
+

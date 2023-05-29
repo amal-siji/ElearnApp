@@ -1,0 +1,62 @@
+
+
+{% block content %}
+<style>
+    .log_form_input{
+      width:400px;
+      height: 100px;
+      margin-left: 20px;
+      color: white;
+    }
+  .login_form{
+    border:1px solid whitesmoke;
+    width: 500px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 210px;
+    margin-left: 300px;
+    box-shadow: 15px 40px 30px;
+  }
+  .login-head{
+    
+    margin-bottom: 50px;
+    animation-duration: 10s;
+    margin-left: 500px;
+    margin-top: 300px;
+  
+  }
+  .log_btn{
+    width: 400px;
+    border-radius: 50px;
+    height: 60px;
+    margin-left: 500px;
+    color:  white;
+    background-color: green;
+  }
+  .log_form_input
+  {
+    color: black;
+    margin-left: 500px;
+  
+  
+  }
+  </style>
+<form method="post" class="admin_login">
+    {% csrf_token %}
+
+    <h1 class="login-head">Admin Login</h1>   
+      <div  class="log_form_input">
+        <h5 >Username</label><h5>
+        {{ form.username}}</div>
+        <div  class="log_form_input">
+          <label>Enter your Password</label><br>
+          {{ form.password }}</div>   
+      <button type="submit" class="log_btn" >Login</button>
+
+      <a href="{% url 'index' %}">BACK TO HOME</a>
+   
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'tr_base.html' %}
+
+{% load static %}
+{% block title %}message{% endblock title %}message
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    {{tchrmsgform.as_p}} 
+</form>
+
+{% endblock %}

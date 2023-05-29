@@ -1,0 +1,61 @@
+{% extends 'teachers/tr_base.html' %}
+{% load static %}
+{% block title %}TeacherProfile{% endblock title %}
+{% block content %}
+
+<h1 class="tr_profile_h"> PROFILE</h1>
+<div>
+
+    <div class="container">
+      
+          <div class="col-sm-6">
+            <table border="2" class="tr_profile">
+                {% if t_profile %} 
+                <tr>
+                   
+                    <td><img class="propicc" src="{{t_profile.image.url}}" </a></td>     
+                </tr>
+                <tr>
+                    <th>FirstName</th>
+                    <td>{{t_profile.user.first_name}}</td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td>{{t_profile.user.last_name}}</td>
+                </tr>
+                <tr>
+                    <th>Username</th>
+                    <td>{{t_profile.user.username}}</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>{{t_profile.user.email}}</td>
+                </tr>             
+                <tr>
+                    <th>subject</th>
+                    <td>{{t_profile.subject}}</td>
+                </tr>
+                                     
+               
+                
+                {% endif %}
+            </table>
+                <div>
+                    <a href=" {% url 'tr_profile_edit' t_profile.user_id %}" ><button class="tr_profile_btn"> EditProfile </button></a>
+                </div>
+          
+            
+        </div>
+       
+        </div>
+         
+        </div>
+      </div>
+
+
+
+
+
+  
+
+{% endblock  %}

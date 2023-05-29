@@ -1,0 +1,16 @@
+{% extends 'student/st_base.html' %}
+
+{% load static %}
+
+{% block content %}
+<table style="color:white;">
+    <tr>
+        <th>Messages</th>
+    </tr>
+    {% for i in show_messages %}
+    <td> {{i.sender}}</td>
+    <td>{{i.message}}
+    </td>
+    {% endfor %}
+</table>
+{% endblock %}

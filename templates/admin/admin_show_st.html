@@ -1,0 +1,38 @@
+{% extends 'admin/admin_base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+  table{
+    margin-left: 500px;
+    border:1px solid black; 
+    margin-top :200px;
+    padding:20px;
+  width: 500px;
+}
+h1{
+  margin-left: 500px;
+}
+ 
+  </style>
+<h1 >Our students</h1>
+<table>
+    <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>skills</th>
+        <th>Address</th>
+        <th>action</th>    
+      </tr>
+      {% for i in show_students %}
+      <tr>
+        <td>{{i.user.first_name}}</td>
+        <td>{{i.user.last_name}}</td>
+        <td>{{i.skills}}</td>
+        <td>{{i.address}}</td>
+        <td><a href="{% url 'st_delete' i.id %}"><button>Delete</button></a></td>    
+      </tr>
+      {% endfor %} 
+</table>
+{% endblock content %}
+

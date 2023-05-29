@@ -1,0 +1,224 @@
+
+.change_pass{
+    margin-left: 500px;
+    color: white;
+    size: 20px;
+
+}
+.tr_profile,tr,th{
+    margin-left: 500px;
+    padding: 30px;
+    margin-top: 100px;
+}
+.tr_profile_h{
+    margin-left: 500px;
+}
+.tr_profile_btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(203, 200, 207);
+    color: whitesmoke;
+    margin-left: 660px;
+    margin-top: 50px;
+}
+
+.tr_home_bg{
+    width: 1900px;
+    height: 800px;
+    background-image: url('../images/istockphoto-1410336912-170667a.jpg');
+}
+
+.examform_input{
+    width: 300px;
+    height:100px;
+    padding: 30px;
+    margin-left: 50px;
+    color:rgb(17, 1, 1);
+
+}
+form{
+    margin-left: 650px;
+    margin-top: 100px;
+    border: 1px solid rgb(244, 231, 231);
+    width: 500px;
+    padding: 30px;
+    box-shadow: 15px 40px 30px;
+    height: 500px;
+}
+button{
+    width: 300px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: blueviolet;
+    color: white;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.exam_head{
+    color: rgb(12, 14, 14);
+    margin-left: 100px;
+    
+}
+body{
+    background-image: url('..static/images/education-day-arrangement-table-with-copy-space.jpg');
+   
+}
+
+
+.examform_input{
+    width: 300px;
+    height:100px;
+    padding: 30px;
+    margin-left: 50px;
+    color:rgb(17, 1, 1);
+
+
+}
+form{
+    margin-left: 650px;
+    margin-top: 100px;
+    border: 1px solid rgb(244, 231, 231);
+    width: 500px;
+    padding: 30px;
+    box-shadow: 15px 40px 30px;
+}
+button{
+    width: 300px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: blueviolet;
+    color: white;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.exam_head{
+    color: rgb(12, 14, 14);
+    margin-left: 100px;
+    
+}
+
+
+
+body{
+    background-color:rgb(236, 213, 213)
+}
+.form_changepass{
+    margin-left: 600px;
+}
+.form-group{
+    width: 500px;
+    height: 50px;
+}
+input[type='text']{
+    width:400px;
+    height: 50px;
+    border-radius: 10px;}
+form{
+    border: 1px solid rgb(30, 30, 10);
+    width: 700px;
+    margin-top: 200px;
+    height: 500px;
+    padding: 50px;
+    box-shadow: 15px 40px 30px;
+    border-radius: 30px;
+
+}
+button{
+    margin-left: 160px;
+    margin-top: 30px;
+}
+
+    body {
+      background-color: rgb(31, 119, 119);}
+      .tr_para{
+        width: 1000px;
+        height: 300px;
+        color: white;
+        background-color: rgb(140, 161, 161);
+        font-size: xx-large;
+        margin-top: 200px;
+        margin-left: 600px;
+        border-radius: 30px;
+        padding: 25px;
+      }
+      .tr_head{
+        margin-left: 600px;
+        color: white;
+      }
+    
+.tr_profile{
+    width: 500px;
+    margin-left: 300px;
+    background-color: rgb(255, 205, 236);
+}
+.tr_profile_btn{
+    width: 300px;
+    background-color: blueviolet;
+    margin-left: 400px;
+}
+.tr_profile_h{
+    color: black;
+    font-size: 50px;
+    margin-left: 760px;
+}
+
+
+  th,td{
+    padding:20px;
+
+  }
+  tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+
+  table{
+  
+    width:900px;
+    margin-left:470px;
+    margin-top:140px;
+  }
+ body{
+  background-color: rgb(205, 223, 205);
+ }
+.st_list{
+    margin-left: 770px;
+}
+
+.examform_input{
+    width: 500px;
+
+
+}
+.exam_form{
+    height: 700px;
+    margin-top: 50px;
+    overflow: hidden;
+    font-size: x-large;
+    margin-left: 500px;
+    
+
+}
+.exam_btn{
+    width: 400px;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-top: 50px;
+    height: 50px;
+}
+#date,#time{
+    width: 300px;
+    height: 50px;
+
+
+}
+
+.propicc{
+    max-width:130px;
+    max-height:100px;
+    border-radius: 20px;
+}
+
+.editbtn{
+    padding-top:300px;
+}

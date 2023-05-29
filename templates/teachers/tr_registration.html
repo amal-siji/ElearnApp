@@ -1,0 +1,68 @@
+{% extends '../base.html' %}
+{% load static %}
+{% block title %}Teacher Registration Page {% endblock %}
+{% block content %}
+
+<style>
+  .reg_form_input{
+    margin-left: 500px;
+    padding: 10px;
+    color: white;
+  }
+  .reg_form_inputbtn{
+    margin-left: 500px;
+    width: 200px;
+    height: 50px;border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+  }
+</style>
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<div>
+<h1 class="reg_form_input">Teacher Registration</h1>
+</div>
+
+<div>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+   <div class="reg_form_input" >
+    <label> Enter firstname</label><br>
+    {{ form.first_name}}</div>
+
+    <div  class="reg_form_input">
+        <label> Enter laststname</label><br>
+        {{ form.last_name}}</div>
+    <div  class="reg_form_input">
+            <label> Enter Your email</label><br>
+            {{ form.email}}</div>
+    <div  class="reg_form_input">
+            <label> Enter Username</label><br>
+            {{ form.username}}</div>
+            <div  class="reg_form_input">
+              <label> enter your subject</label><br>
+              {{ form.subject}}</div>
+        
+      <div  class="reg_form_input">
+              <label> Upload your image</label><br>
+              {{ form.image}}</div>
+        
+    <div  class="reg_form_input">
+                <label> Enter password</label><br>
+                {{ form.password1}}</div>
+
+    <div  class="reg_form_input">
+                    <label> Confirm your password</label><br>
+                    {{ form.password2}}</div>
+                    
+  <button type="submit" class="reg_form_inputbtn">Register</button>
+</form>
+</div>
+{% endblock %}

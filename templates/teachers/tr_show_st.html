@@ -1,0 +1,24 @@
+{% extends 'teachers/tr_base.html' %} {% load static %} 
+{% block title %}StudentList{% endblock %}{% block content %}
+
+
+<div>
+  <table border="2">
+    <h1 class="st_list"> Student List</h1>
+    <tr>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>skills</th>
+      <th>Address</th>
+    </tr>
+    {% for i in show_students %}
+    <tr>
+      <td>{{i.user.first_name}}</td>
+      <td>{{i.user.last_name}}</td>
+      <td>{{i.skills}}</td>
+      <td>{{i.address}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'teachers/tr_base.html' %}
+
+{% block title %}
+Teacher Edit
+{% endblock title %}
+
+{% block content %}
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<div>
+  
+<form method='post' enctype="multipart/form-data">
+    {% csrf_token %}
+    <div> <h2>Edit</h2></div>
+
+       {{form.as_p}} 
+<!--     
+      <div  class="edit_form_input">
+        <label>Enter your Firstname</label><br>
+      {{ form.first_name }} </div>
+        <div  class="edit_form_input">
+          <label>Enter your Larstname</label><br>
+          {{ form.last_name }}</div>
+          <div  class="edit_form_input">
+            <label>Enter your username</label><br>
+            {{ form.username }}</div>
+      
+          <div  class="edit_form_input">
+            <label>Enter your Firstname</label><br>
+            {{ form.subject }}</div>
+            <div  class="edit_form_input">
+              <label>Enter your email</label><br>
+              {{ form.email }}</div>
+       -->
+    
+  
+
+  <button type="submit" > Edit Now</a>
+</form>
+</div>
+
+{% endblock %}

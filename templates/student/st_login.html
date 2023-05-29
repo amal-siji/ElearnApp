@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}
+Student Login
+{% endblock title %} 
+
+{% block content %}
+<style>
+.log_form_input{
+      width:400px;
+      height: 100px;
+      margin-left: 20px;
+      color: white;
+    }
+  .login_form{
+    border:1px solid whitesmoke;
+    width: 500px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 210px;
+    margin-left: 300px;
+    box-shadow: 15px 40px 30px;
+  }
+  .login-head{
+    color: white;
+    margin-bottom: 50px;
+    animation-duration: 10s;
+  
+  }
+  .log_btn{
+    width: 400px;
+    border-radius: 50px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top:20px;
+    color:  white;
+    background-color: green;
+  }
+  </style>
+  <div> 
+<form  method="Post" class="login_form" >
+    {% csrf_token %}
+    <div class="tr_loginform">
+    <h1 class="login-head">Student Login</h1></div>
+    <div  class="log_form_input">
+        <label >Username</label><br>
+        {{ form.username}}</div>
+        <div  class="log_form_input">
+          <label>Enter your Password</label><br>
+          {{ form.password }}</div>    
+      <button type="submit" class="log_btn" >Login</button>
+</form></div>
+</div>
+{% endblock %}

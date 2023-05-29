@@ -1,0 +1,18 @@
+{% extends 'teachers/tr_base.html' %}
+{% load static %}
+{% block content %}
+
+<table>
+<tr>
+    <th>sender</th>
+    <th>message</th>
+</tr>
+<tr>
+    {% for i in  show_messages %}
+    <td>{{i.sender}}</td>
+    <td>{{i.message}}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

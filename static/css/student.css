@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(55, 226, 226);}
+  .tr_para{
+      width: 1000px;
+      height: 300px;
+      color: white;
+      background-color: rgb(140, 161, 161);
+      font-size: xx-large;
+      margin-top: 200px;
+      margin-left: 600px;
+      border-radius: 30px;
+      padding: 25px;}
+.exams{
+    margin-right: 300px;
+}
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+  body {
+    background-color: rgb(113, 135, 135);}
+    .st_para{
+      width: 1000px;
+      height: 300px;
+      color: white;
+      background-color: rgb(140, 161, 161);
+      font-size: xx-large;
+      margin-top: 200px;
+      margin-left: 600px;
+      border-radius: 30px;
+      padding: 25px;
+    }
+    .st_head{
+      margin-left: 600px;
+      color: white;
+    }
+    .msgform{
+        margin-left: 570px;
+        margin-top: 250px;
+    }
+    button{
+      width: 100px;
+      height: 40px;
+      border-radius: 20px;background-color: blue;
+      color: white;
+    }
+    body{
+      background-color: green;
+    }
+    form{
+      color: white;
+
+    }

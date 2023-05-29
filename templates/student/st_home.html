@@ -1,0 +1,35 @@
+{% extends 'student/st_base.html' %} {% load static %} {% block title %}
+studentHome {% endblock title %}
+<div class="tr_home_bg">
+  {% block content %}
+  <style>
+    body {
+      background-color: rgb(113, 135, 135);
+    }
+    .st_para {
+      width: 1000px;
+      height: 300px;
+      color: white;
+      background-color: rgb(140, 161, 161);
+      font-size: xx-large;
+      margin-top: 200px;
+      margin-left: 600px;
+      border-radius: 30px;
+      padding: 25px;
+    }
+    .st_head {
+      margin-left: 600px;
+      color: white;
+    }
+  </style>
+  <h1 class="st_head">studentHome</h1>
+  <div>
+    <p class="st_para">
+      "SUCCESS is no Accident it is
+      HARDWORK,PERSEVERANCE,LEARNING,STUDYING,SACRIFIC <br />
+      and most of all LOVE OF WHAT YOU ARE DOING or learning to do.."<br />
+      <span style="color: rgb(94, 94, 177)"> 'pele'</span>
+    </p>
+  </div>
+  {% endblock %}
+</div>

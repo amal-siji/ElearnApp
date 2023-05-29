@@ -1,0 +1,44 @@
+{% extends 'student/st_base.html' %}
+{% load static %}
+
+{% block content %}
+ <h1>Your profile</h1>
+<div>
+    <table border="2" class="tr_profile">       
+        {% if profile %}        
+        <tr>
+                   
+            <td><img class="propicc" src="{{profile.image.url}}" </a></td>     
+        </tr>
+        <tr>
+            <th>FirstName</th>
+            <td>{{profile.user.first_name}}</td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td>{{profile.user.last_name}}</td>
+        </tr>
+        <tr>
+            <th>Username</th>
+            <td>{{profile.user.username}}</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>{{profile.user.email}}</td>
+        </tr>             
+        <tr>
+            <th>Skills</th>
+            <td>{{profile.skills}}</td>
+        </tr>       
+        <tr>
+            <th>Course</th>
+            <td>{{profile.course}}</td>
+       
+        </tr>        
+        {% endif %}
+    </table>
+</div>
+<div>
+    <a href="{% url 'st_edit' profile.id %}"><button  type="submit" class="tr_profile_btn">EditProfile</button></a>
+</div>
+{% endblock content %}

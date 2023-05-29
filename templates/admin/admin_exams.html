@@ -1,0 +1,32 @@
+{% extends 'admin/admin_base.html' %}
+
+{% block title %}Exams{% endblock title %}
+{% block content %}
+<style>
+    
+</style>
+<div> 
+    <form method="post" class="exam_form">
+        {% csrf_token %}
+        <table>
+           
+            <tr>
+                <th>Subject</th>
+                <th>Portion<th>                                  
+                <th>Date of Exam</th>
+                <th>Time of Exam</th>
+                
+            </tr>
+            {% for exam in notification %}
+            <tr>            
+                <td>{{exam.subject}}</td>
+                <td>{{exam.Portion}}</td>
+                <td>{{exam.Datetime}}</td>
+                <td>{{exam.time}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </form>
+</div>
+
+{% endblock  %}
